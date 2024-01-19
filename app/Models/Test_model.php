@@ -10,6 +10,10 @@ class Test_model
 
     private $test;
 
+private $var1;
+
+
+
     public function __construct()
     {
         $this->test = new self();
