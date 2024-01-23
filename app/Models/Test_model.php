@@ -15,5 +15,7 @@ class Test_model
     public function __construct()
     {
         $this->test = new self();
+
+
     }
 }

@@ -5,9 +5,6 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
-// TODO-vardump VAR_DUMP
-die(var_dump(phpinfo()));
-
 
 /*
 |--------------------------------------------------------------------------

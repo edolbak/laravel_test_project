@@ -17,10 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-    return view('welcome');
-});
 
-Route::get('/test2', function () {
-    return view('welcome');
-});
+Route::get('/test', [\App\Http\Controllers\Test\TestController::class, 'index']);
