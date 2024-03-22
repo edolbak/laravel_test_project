@@ -15,4 +15,23 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+
+    /**
+     * @dataProvider someDataProvider
+     * @return void
+     */
+    public function test_example3($data)
+    {
+        $rrr = 111;
+
+        $this->assertEquals($data, $rrr);
+    }
+
+    public function someDataProvider()
+    {
+        return [
+            [333],[222],[111]
+        ];
+    }
 }

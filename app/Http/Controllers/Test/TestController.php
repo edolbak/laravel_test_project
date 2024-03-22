@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Test;
 
+use App\Classes\Fake\FakeClass1;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -9,13 +10,17 @@ class TestController extends Controller
 {
     public function index()
     {
+//        $db = new \PDO("mysql:host=localhost", "root", "123");
+
+        $fakeClass1 = new FakeClass1();
+
         $i=10;
         $count = 0;
-        $limit = 10000;
+        $limit = 10;
         while (true){
             if($i==$limit+1){
                 // TODO-vardump VAR_DUMP
-                var_dump('<br><br><br>COUNT= '.$count);
+                var_dump('<br><br><br><h3>COUNT= '.$count.'</h3>');
                 // TODO-vardump VAR_DUMP
                 die(var_dump('<br><br><br><br>'.$limit));
             }
